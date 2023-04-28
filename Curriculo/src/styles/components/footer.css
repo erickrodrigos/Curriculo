@@ -1,0 +1,21 @@
+footer{
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: var(--primary-color);
+
+    color: #fff;
+    font-weight: 500;
+}
+
+footer span{
+
+    position: absolute;
+
+    left: 42%;
+}
+
+
+

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+
+    width:100%;
+
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+:root{
+    /*cores*/
+
+    --dark-primary-color: #ffa000;
+    --light-primary-color: #ffecb3;
+    --primary-color: #ffc107;
+    --text-icons:#212121;
+    --acent-color:#ffc107;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --divider-color: #bdbdbd;
+    --bg-button:#176902;
+    
+
+    /*fontes*/
+
+    --font-size-larger: 70px;
+    --font-size-large:65px;
+    --font-size-big:56px;
+    --font-size-md:26px;
+    --font-size-small:16px;
+}
+
+.row{
+
+    display: flex;
+}
+
+/* CARD*/
+.projeto button{
+
+    border: 0;
+
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+
+    font-size: var(--font-size-small);
+
+    color: #fff;
+    background-color: var(--bg-button);
+    cursor: pointer;
+
+}
+
+.projeto  button:hover{
+
+    background-color: #ffffff;
+    transition: 0.4s;
+}

@@ -1,0 +1,340 @@
+.geral{
+
+height: 90vh;
+
+    
+}
+main{
+background: url("/images/pexels-adonis-arias-4601807.jpg");
+background-position: center;
+
+}
+
+#inicio{
+
+width: 100vw;
+display: inline;
+justify-content: space-around;
+align-items: center;
+}
+h1{
+
+font-size: var(--font-size-larger);
+color: var(--primary-color);    
+text-shadow:  0px 4px 4px rgba(0, 0, 0, 0.36);;
+margin-left: 420px;
+width: 600px;
+
+}
+#foto{
+margin-left: 600px;
+}
+#row{
+
+display: flex;
+justify-content: space-around;
+
+}
+section#inicio.geral {
+display: flex;
+align-items: flex-start;
+align-content: center;
+}
+
+#titulo{
+
+font-size: var(--font-size-big);
+color: var(--primary-color);
+text-align: center;
+margin-bottom: 0%;
+ 
+}
+.projeto{
+
+display: flex;
+flex-direction:column;
+align-items: center;
+color: var(--dark-primary-color);
+text-align: center;
+
+}
+
+#contato{
+
+font-size: var(--font-size-big);
+color: var(--dark-primary-color);
+text-align: center;
+margin-bottom: 70px;
+}
+
+h3{
+
+font-size: var(--font-size-large);
+color: #fff;
+text-shadow:  0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+h3{
+position: absolute;
+top: 26%;
+left: 9%;
+}
+h4{
+margin: 10px;
+color: var(--primary-color);
+font-size: 30px;
+
+}
+
+.caixa{
+flex-direction:row;
+align-items: flex-end;
+      
+}
+                
+#nome, #sobrenome, #telefone, #email {
+width: 600px;
+height: 50px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 14px;
+font-size: 20px;
+}
+.termo{
+
+width: 435px;
+height: 32px;
+margin-bottom: 40px;
+color:#fff; 
+justify-content: space-around;
+ 
+}   
+
+/*  botão */
+.button {
+border: auto;
+color: white;
+padding: 6px 60px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin: 30px;
+margin-left: 120px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+
+
+.button {
+    background-color: var(--dark-primary-color) ;
+    color: #fff; 
+    border: 2px solid var(--dark-primary-color);
+    border-radius: 20px;
+    
+}
+
+.button:hover {
+background-color:var(--primary-color);
+color: white;
+}
+
+
+          /* Customizando o botão  de aceito*/
+
+.escolha {
+
+display: block;
+position: relative;
+padding-left: 10px;
+margin-bottom:5px;
+cursor: pointer;
+font-size: 15px;
+    }
+    
+    /* posição da bolinha */
+.escolha input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+     
+  
+.checkmark {
+position: absolute;
+
+height: 15px;
+width: 15px;
+background-color: #fff;
+    
+    }
+      
+    /* qunado passar com o mouse mudar de cor */
+.escolha:hover input ~ .checkmark {
+background-color: #0000;
+}
+      
+/*a cor do botão após ser clicado */
+.escolha input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+/* estilo do interior do botão */
+.escolha .checkmark:after {
+top: 9px;
+left: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+background: white;
+} 
+p{
+
+font-size: 20px;
+color: var(--light-primary-color);
+flex-direction: column;
+
+} 
+#texto{
+margin: 30px;
+margin-top: 0px;
+} 
+/*        slides          */
+  
+  .slider-container {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slide:nth-of-type(even) {
+    background-color: transparent;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: transparent;
+    transform-origin: center center;
+    transform: scale(1);
+  }
+  
+  .slide__text {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  .slide a {
+    background: none;
+    border: none;
+  }
+  
+  a.slide__prev,
+  .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+  }
+  
+a.slide__next,  .slider::after {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+ right: 5%;
+  }
+  
+.slider::before,  .slider::after,  .slide__prev,  .slide__next {
+position: absolute;
+top: 48%;
+width: 35px;
+height: 28px;
+border: solid var(--dark-primary-color);
+border-width: 0 4px 4px 0;
+padding: 3px;
+box-sizing: border-box;
+  }
+  
+.slider::before,  .slider::after {
+    content: "";
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+  }
+  
+.slider__nav {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+  }
+  
+.slider__navlink {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--dark-primary-color);
+    margin: 0 10px 0 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+.read-article{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    color: #000;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: arial;
+    text-decoration: none;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+  }
+  .read-article:hover{
+      background: #d5d5d5;
+      box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+  }
+  iframe[sandbox] .read-article{
+    display: none;
+  }
